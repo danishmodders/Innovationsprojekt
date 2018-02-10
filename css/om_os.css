@@ -1,0 +1,64 @@
+/* CSS Variables */
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  --black: #343436;
+}
+
+/* Overall styling af dokumentet */
+html {
+  font-family: Arial, Helvetica, sans-serif; /*skrifttypen brugt igennem hele siden */
+  color: var(--dark); /*Baggrundsfarve til siden */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url('../Images/om_os_baggrund.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.om_os h1, p {
+  color: var(--light);
+  margin: 5px;
+  padding: 0;
+}
+
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
+
+/* Rammer til beskrivelser af os indehavere */
+.Roller {
+  padding: 0px 10px 0px 10px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.Roller-box {
+  background: var(--primary);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  box-shadow: var(--shadow);
+  height: 300px;
+}
+
+.Roller-box p {
+  color: var(--dark);
+}
+
+.profil-billede {
+  border-radius: 50%;
+  width: 80%;
+  height: 50%;
+}
