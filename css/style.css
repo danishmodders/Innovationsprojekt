@@ -330,7 +330,7 @@ footer p {
     padding-top: 60px;
 }
 
-/* Modal Content/Box */
+/* Login Content/Box */
 .login-content {
     background-color: var(--dark);
     margin: 5px auto; /* 15% from the top and centered */
@@ -343,7 +343,7 @@ footer p {
     justify-content: center;
 
 }
-
+/* Login styling til Hovedelinks som username password  */
 .container-main {
   margin: auto;
   text-align: center;
@@ -351,14 +351,15 @@ footer p {
   justify-content: center;
 }
 
+/* Generel padding og centrering af øvrige elementer */
 .container, .login-btn {
   text-align: center;
   margin-top: 25px;
 }
 
-/* The Close Button */
+/* Knap til luk af login-formen igen */
 .close {
-    /* Position it in the top right corner outside of the modal */
+    /* Positionering i toppen af højre hjørne */
     position: absolute;
     right: 25px;
     top: 0;
@@ -367,14 +368,15 @@ footer p {
     font-weight: bold;
 }
 
-/* Close button on hover */
+/* Close ved hover */
 .close:hover,
 .close:focus {
     color: red;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
-/* Add Zoom Animation */
+/* Zoom animation af hele form ved klik, samt generel animation til andre browsers */
 .animate {
     -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
