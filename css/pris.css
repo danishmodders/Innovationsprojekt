@@ -25,3 +25,39 @@ body {
   grid-gap: 20px;
 
 }
+
+/* Tilføjet styling til sammenligningen. */
+.comparison-section {
+  padding: 0px 10px 0px 10px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.comparison {
+  background: var(--primary);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  box-shadow: var(--shadow);
+}
+
+.comparison:hover {
+  box-shadow: 10px 0 var(--shadow);
+}
+
+.comparison p {
+  float: left;
+  width: 80%;
+}
+
+.icon {
+  float: right;
+  width: 10%;
+  margin: 18px auto;
+  padding: 0;
+
+}
+
+.buy {
+  display: inline-block;
+}
