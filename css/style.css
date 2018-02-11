@@ -189,28 +189,28 @@ nav a:focus {
 
 /* Nyeste film */
 .new {
-  padding: 0px 10px 0px 10px;
+  padding: 0px 10px;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
-
-.box {
-  background: var(--primary);
-  text-align: center;
-  padding: 1.5rem 2rem;
+/* Movieposter as background forsøg */
+/* Denne funktion gør at billedet vil fade så snart musen bliver holdt over billedet */
+.poster:hover {
   box-shadow: var(--shadow);
+  opacity: 0.7;
+  transition: .1s ease
 }
-/* Styling af plakat i showcasen */
-.new-showcase {
-  width: 225px;
-  margin: 0;
-  padding: 0;
+
+/*  */
+.poster {
+  width: 255px;
+  height: 325px;
 }
 
 /* Mest populærer */
 .popular-movies {
-  padding: 0px 10px 0px 10px;
+  padding: 0px 10px;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

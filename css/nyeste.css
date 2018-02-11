@@ -75,13 +75,15 @@ input[type=submit] {
     padding: 0px 10px;
 }
 
-/* Movieposter as background forsøg */
-.box1 {
-  opacity: 1;
-  align-items: start;
-  justify-content: center;
-  position: relative;
+
+/* Nyeste film */
+.new {
+  padding: 0px 10px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
+/* Movieposter as background forsøg */
 /* Denne funktion gør at billedet vil fade så snart musen bliver holdt over billedet */
 .poster:hover {
   box-shadow: var(--shadow);
@@ -89,10 +91,8 @@ input[type=submit] {
   transition: .1s ease
 }
 
-
-
 /*  */
 .poster {
-  width: 265px;
+  width: 255px;
   height: 325px;
 }

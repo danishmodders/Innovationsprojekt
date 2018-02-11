@@ -43,6 +43,8 @@ body {
 
 .comparison:hover {
   box-shadow: 10px 0 var(--shadow);
+  border: 1px solid var(--dark);
+  transition: 0.6s ease;
 }
 
 .comparison p {
