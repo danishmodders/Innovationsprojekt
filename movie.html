@@ -8,76 +8,122 @@
     <title>Miras: test site</title>
   </head>
   <body>
-    <!-- Header som styre vores logo, link og login-system -->
-    <header>
-      <div class="nav-container">
-        <!-- Logo -->
-        <!-- <img src="/Images/logo.png" alt=""> -->
-        <!-- Midlertidigt Logo -->
-        <i class="logo fab fa-google fa-2x"></i>
 
-        <!-- Hovedelinks til vores nav -->
-        <nav>
-          <ul>
-            <li class="nav-item"><a class="nav" href="index.html">Hjem</a></li>
-            <li class="nav-item"><a class="nav" href="nyeste.html">Nyeste film</a></li>
-            <li class="nav-item"><a class="nav" href="mest_sete.html">Mest sete</a></li>
-            <li class="nav-item"><a class="nav" href="om_os.html">Om os</a></li>
-                <!-- Login-forms -->
-            <li class="nav-item">
-              <!-- Vores knap til at init vores login form -->
-              <a href="#" onclick="document.getElementById('login').style.display='block'">Login</a>
+      <!-- Header som styre vores logo, link og login-system -->
+      <header>
+        <div class="nav-container">
+          <!-- Logo -->
+          <!-- <img src="/Images/logo.png" alt=""> -->
+          <!-- Midlertidigt Logo -->
+          <i class="logo fab fa-google fa-2x"></i>
 
-              <!-- Selve login-siden -->
-              <div id="login" class="login">
-                <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <!-- Hovedelinks til vores nav -->
+          <nav>
+            <ul>
+              <li class="nav-item"><a class="nav" href="index.html">Hjem</a></li>
+              <li class="nav-item"><a class="nav" href="nyeste.html">Nyeste film</a></li>
+              <li class="nav-item"><a class="nav" href="mest_sete.html">Mest sete</a></li>
+              <li class="nav-item"><a class="nav" href="om_os.html">Om os</a></li>
+                  <!-- Login-forms -->
+              <li class="nav-item">
+                <!-- Vores knap til at init vores login form -->
+                <a href="#" onclick="document.getElementById('login').style.display='block'">Login</a>
 
-                <!-- Hovedindholdet -->
-                <form class="login-content animate" action="/action_page.php">
-                  <div class="imgcontainer">
-                    <img src="profil_billede.jpg" alt="" class="avatar">
-                  </div>
+                <!-- Selve login-siden -->
+                <div id="login" class="login">
+                  <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
 
-                  <div class="container-main">
-                    <label for="uname"><b>Username:</b></label>
-                    <input type="text" placeholder="Enter Username" name="uname" required> <br>
+                  <!-- Hovedindholdet -->
+                  <form class="login-content animate" action="/action_page.php">
+                    <div class="imgcontainer">
+                      <img src="profil_billede.jpg" alt="" class="avatar">
+                    </div>
 
-                    <label for="psw"><b>Password:</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required> <br>
+                    <div class="container-main">
+                      <label for="uname"><b>Username:</b></label>
+                      <input type="text" placeholder="Enter Username" name="uname" required> <br>
 
-                    <button class="login-btn" type="submit">Login</button><br>
-                    <label>
-                      <input type="checkbox" name="remember"> Remember me
-                    </label><br>
-                  </div>
+                      <label for="psw"><b>Password:</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" required> <br>
 
-                  <div class="container">
-                    <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
-                    <span class="psw">Forgot <a href="#">password?</a></span>
-                  </div>
-                </form>
-              </div>
-            </li>
+                      <button class="login-btn" type="submit">Login</button><br>
+                      <label>
+                        <input type="checkbox" name="remember"> Remember me
+                      </label><br>
+                    </div>
 
-            <!-- Dette har funktionen at lukke vores login-system ved click. Dette gør den ved at have en eventlistener
-            kaldet window.onclick. Når den er sand bliver vores modals display returneret til none -->
-            <script>
-            // Vi laver her et variable kaldet modal som vi finder ved at gå ind i dokumentet og finder elementet med id´et id01
-            var login = document.getElementById('login');
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-                if (event.target == login) {
-                    login.style.display = "none";
-                }
-            }
-            </script>
-            <li class="nav-item"><a class="nav" href="pris.html">Priser</a>
-          </ul>
+                    <div class="container">
+                      <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
+                      <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                  </form>
+                </div>
+              </li>
 
-        </nav>
-      </div>
-    </header>
-    <!-- navbar slut -->
+              <!-- Dette har funktionen at lukke vores login-system ved click. Dette gør den ved at have en eventlistener
+              kaldet window.onclick. Når den er sand bliver vores modals display returneret til none -->
+              <script>
+              // Vi laver her et variable kaldet modal som vi finder ved at gå ind i dokumentet og finder elementet med id´et id01
+              var login = document.getElementById('login');
+              // When the user clicks anywhere outside of the modal, close it
+              window.onclick = function(event) {
+                  if (event.target == login) {
+                      login.style.display = "none";
+                  }
+              }
+              </script>
+              <li class="nav-item"><a class="nav" href="pris.html">Priser</a>
+            </ul>
 
+          </nav>
+        </div>
+      </header>
+      <!-- navbar slut -->
+
+      <!-- Fremvisning af film -->
+      <section class="movie-content">
+        <div class="sidebar">
+          <img src="Images/nyeste_film/film_1.png" alt="">
+          <h2>lej [navn]</h2>
+          <p class="price">20kr</p>
+        </div>
+        <div class="content">
+          <h1>[Navn på film]</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut necessitatibus maiores adipisci dicta reprehenderit amet laudantium sed quo eum. Quasi corrupti dignissimos distinctio a, sit provident? Corporis porro non repudiandae a recusandae, totam sapiente libero quisquam nulla sed laborum est ut vitae odio aut, culpa voluptates eum amet tenetur ab, at eveniet. Molestias repudiandae fuga nesciunt atque. Expedita dolores voluptatum, quod, aperiam dicta alias ipsam at, magnam corporis quaerat ipsum consectetur voluptate. Dolorum maxime assumenda, distinctio aperiam rerum libero consequuntur ab voluptatem harum nulla sint cumque. Maxime quo eveniet totam iure beatae. A inventore, tempora quia, iste, quasi excepturi corporis ea nihil laborum fuga, minus magni! Id optio dolore asperiores iste quis itaque ab, at repellendus a, soluta excepturi nesciunt.</p>
+
+          <div class="media">
+            <h3 class="padded-multiline"> Se traileren:</h3>
+            <video width="640" height="360" controls>
+              <source src="trailer.mp4" type="video/mp4">
+              Your browser does not suppoert the cideo tag.
+            </video>
+         </div>
+
+          <h2>Andre har også set:</h2>
+          <section class="suggestions">
+            <a href="movie.html"><img class="suggestion" src="Images/nyeste_film/film_2.jpeg" alt=""></a>
+            <a href="movie.html"><img class="suggestion" src="Images/nyeste_film/film_3.jpeg" alt=""></a>
+            <a href="movie.html"><img class="suggestion" src="Images/nyeste_film/film_4.jpeg" alt=""></a>
+            <a href="movie.html"><img class="suggestion" src="Images/nyeste_film/film_5.jpeg" alt=""></a>
+            <a href="movie.html"><img class="suggestion" src="Images/nyeste_film/film_6.jpg" alt=""></a>
+            <a href="movie.html"><img class="suggestion" src="Images/nyeste_film/film_7.jpg" alt=""></a>
+            <a href="movie.html"><img class="suggestion" src="Images/nyeste_film/film_8.jpg" alt=""></a>
+            <a href="movie.html"><img class="suggestion" src="Images/nyeste_film/film_9.jpg" alt=""></a>
+            <a href="movie.html"><img class="suggestion" src="Images/nyeste_film/film_10.jpg" alt=""></a>
+            <a href="movie.html"><img class="suggestion" src="Images/nyeste_film/film_11.jpg" alt=""></a>
+            <a href="movie.html"><img class="suggestion" src="Images/nyeste_film/film_12.jpg" alt=""></a>
+          </section>
+        </div>
+      </section>
+
+      <!-- Footer -->
+       <footer>
+         <p class="copy">Rasmus Kirkeby Borup &copy; 2018</p>
+         <ul class="Footer">
+           <li class="footer-item"><a href="om_os.html">Om os</a></li>
+           <li><a href="#">Kontakt os</a></li>
+           <li><a href="#">karriereveje</a></li>
+         </ul>
+       </footer>
   </body>
 </html>

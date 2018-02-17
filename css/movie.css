@@ -34,3 +34,39 @@ nav ul {
   padding: 0;
   list-style: none;
 }
+
+/* Siden er nu opdelt i 2 sektioner, 1 lille til selve filmposteren og en stor del til information osv. */
+.movie-content {
+  padding: 0px 10px 0px 10px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    'showcase content content content content content content content'
+    'showcase content content content content content content content';
+}
+
+.sidebar {
+  grid-area: showcase;
+  margin-top: 25px;
+}
+
+.content {
+  grid-area: content;
+}
+
+/* Styling af posters under "Andre har også set" */
+.suggestions {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.suggestion {
+  height: 200px;
+}
+
+.suggestion:hover {
+  box-shadow: var(--shadow);
+  opacity: 0.7;
+  transition: .1s ease
+}
