@@ -18,6 +18,7 @@ body {
   background: #ccc;
   line-height: 1.4;
   margin: 0;
+  width: 100%;
 }
 
 .wrapper {
@@ -69,7 +70,6 @@ nav ul {
 nav li {
   display: inline-block;
   margin-left: 35px;
-  padding-top: 10px 15px;
   font-size: 0.8rem;
 }
 

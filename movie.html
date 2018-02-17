@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/movie.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <title>Miras: test site</title>
+  </head>
+  <body>
+    <!-- Header som styre vores logo, link og login-system -->
+    <header>
+      <div class="nav-container">
+        <!-- Logo -->
+        <!-- <img src="/Images/logo.png" alt=""> -->
+        <!-- Midlertidigt Logo -->
+        <i class="logo fab fa-google fa-2x"></i>
+
+        <!-- Hovedelinks til vores nav -->
+        <nav>
+          <ul>
+            <li class="nav-item"><a class="nav" href="index.html">Hjem</a></li>
+            <li class="nav-item"><a class="nav" href="nyeste.html">Nyeste film</a></li>
+            <li class="nav-item"><a class="nav" href="mest_sete.html">Mest sete</a></li>
+            <li class="nav-item"><a class="nav" href="om_os.html">Om os</a></li>
+                <!-- Login-forms -->
+            <li class="nav-item">
+              <!-- Vores knap til at init vores login form -->
+              <a href="#" onclick="document.getElementById('login').style.display='block'">Login</a>
+
+              <!-- Selve login-siden -->
+              <div id="login" class="login">
+                <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+                <!-- Hovedindholdet -->
+                <form class="login-content animate" action="/action_page.php">
+                  <div class="imgcontainer">
+                    <img src="profil_billede.jpg" alt="" class="avatar">
+                  </div>
+
+                  <div class="container-main">
+                    <label for="uname"><b>Username:</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required> <br>
+
+                    <label for="psw"><b>Password:</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required> <br>
+
+                    <button class="login-btn" type="submit">Login</button><br>
+                    <label>
+                      <input type="checkbox" name="remember"> Remember me
+                    </label><br>
+                  </div>
+
+                  <div class="container">
+                    <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                  </div>
+                </form>
+              </div>
+            </li>
+
+            <!-- Dette har funktionen at lukke vores login-system ved click. Dette gør den ved at have en eventlistener
+            kaldet window.onclick. Når den er sand bliver vores modals display returneret til none -->
+            <script>
+            // Vi laver her et variable kaldet modal som vi finder ved at gå ind i dokumentet og finder elementet med id´et id01
+            var login = document.getElementById('login');
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == login) {
+                    login.style.display = "none";
+                }
+            }
+            </script>
+            <li class="nav-item"><a class="nav" href="pris.html">Priser</a>
+          </ul>
+
+        </nav>
+      </div>
+    </header>
+    <!-- navbar slut -->
+
+  </body>
+</html>
