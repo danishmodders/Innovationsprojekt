@@ -248,17 +248,6 @@ a.btn:hover{
   color: var(--light);
 }
 
-footer {
-  margin: 0;
-  float: right;
-  background-color: var(--dark);
-}
-
-footer p {
-  color: var(--primary);
-  padding: 5px 10px;
-  margin: 0;
-}
 
 /* Media Queries */
   @media (max-width: 870px) {
@@ -390,4 +379,37 @@ footer p {
 @keyframes animatezoom {
     from {transform: scale(0)}
     to {transform: scale(1)}
+}
+
+/* footer */
+footer {
+  margin: 0;
+  padding: 0;
+  background-color: var(--dark);
+  min-height: 150px;
+}
+
+p.copy {
+  color: var(--primary);
+  left: 0;
+  top: 0;
+  margin: 20px;
+  width: 70%;
+  float: left;
+}
+
+.Footer a {
+  float: right; /* Sætter alle a over i højre side */
+  list-style: none;
+  color: var(--light);
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Footer {
+  margin: 20px;
+  padding: 0;
+  width: 20%;
+  float: right;
 }
