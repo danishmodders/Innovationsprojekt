@@ -53,6 +53,8 @@ header::after {
   float: left;
   color: var(--primary);
   padding: 10px 0;
+  height: 40px;
+  width: 120px;
 }
 
 /* Navbar links styling */
@@ -140,7 +142,7 @@ nav a:focus {
 /* Showcase */
 .showcase {
   grid-area: showcase;
-  min-height: 400px;
+  min-height: 250px;
   background: url(http://www.starscape.co.uk/Images/Homecinema/HC%20project%208/bluebell%20home%20cinema.jpg);
   background-size: cover;
   background-position: center;
@@ -191,7 +193,7 @@ nav a:focus {
   padding: 0px 10px;
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 /* Movieposter as background forsøg */
 /* Denne funktion gør at billedet vil fade så snart musen bliver holdt over billedet */
@@ -204,7 +206,7 @@ nav a:focus {
 /* Poster størrelse */
 .poster {
   width: 255px;
-  height: 325px;
+  height: 225px;
 }
 
 /* Mest populærer */
