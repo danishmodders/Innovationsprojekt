@@ -149,20 +149,18 @@ nav a:focus {
 .top-container {
   padding: 0px 10px 0px 10px;
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 10px;
   grid-template-areas:
-    'showcase showcase showcase top-box-a'
-    'showcase showcase showcase top-box-b';
+    'showcase showcase showcase top-box-a top-box-b';
 }
 
 /* Showcase */
 .showcase {
   grid-area: showcase;
-  min-height: 250px;
   background: url(http://www.starscape.co.uk/Images/Homecinema/HC%20project%208/bluebell%20home%20cinema.jpg);
   background-size: cover;
   background-position: center;
-  padding: 3rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -192,16 +190,18 @@ nav a:focus {
   padding: 1.5rem;
 }
 
-.top-box .price {
-  font-size: 2.5rem;
+.top-box h4, .price {
+  font-size: 20px;
 }
 
 .top-box-a {
   grid-area: top-box-a;
+
 }
 
 .top-box-b {
   grid-area: top-box-b;
+
 }
 
 /* Nyeste film */

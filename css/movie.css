@@ -62,7 +62,8 @@ nav ul {
 }
 
 .suggestion {
-  height: 200px;
+  width: 120px;
+
 }
 
 .suggestion:hover {
